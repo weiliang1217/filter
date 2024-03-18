@@ -9,7 +9,10 @@ with open ('reviews.txt', 'r') as file: # 開啟某個檔案並讀取內容，�
 
 # filter function: 1. 有條件 2. 參考資料可定義的
 # 篩選條件 word < 100
-word = []
+f=[]
 for word in data: # 將原始data清單更新至word清單中，以免破壞原有
 	if len(word) < 100:
-		print(word)
+		f.append(word)
+print(len(f))
+
+		
